@@ -1,11 +1,3 @@
-terraform {
-  required_providers {
-    aws = {
-      source  = "hashicorp/aws"
-      version = "~> 3.0"
-    }
-  }
-}
 resource "google_sql_database_instance" "skip_show" {
   name             = "master-instance"
   database_version = "MYSQL_8_0"
