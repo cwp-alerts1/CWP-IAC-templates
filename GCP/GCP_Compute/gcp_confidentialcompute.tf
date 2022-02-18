@@ -1,11 +1,3 @@
-terraform {
-  required_providers {
-    aws = {
-      source  = "hashicorp/aws"
-      version = "~> 3.0"
-    }
-  }
-}
 resource "google_compute_instance" "confidential" {
   name         = "test"
   machine_type = "n1-standard-1"
