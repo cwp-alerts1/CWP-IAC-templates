@@ -20,5 +20,8 @@ module "compute" {
 }
 
 module "db" {
-  source = "./modules/db"
+  source = "./modules/DB"
+}
+module "network" {
+  source = "./modules/network"
 }
