@@ -8,6 +8,8 @@ resource "aws_instance" "ebs_optimized" {
   }
 }
 
+
+
 resource "aws_instance" "monitoring" {
   ami           = var.ami_id
   instance_type = var.type
